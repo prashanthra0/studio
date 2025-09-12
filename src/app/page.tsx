@@ -10,14 +10,12 @@ export default function Home() {
   const { vehicleData, alerts } = useVehicleData();
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-4 sm:p-8 md:p-12 overflow-hidden relative font-headline bg-background">
-      <div 
-        className="absolute inset-0 bg-no-repeat bg-center"
-        style={{
-          backgroundImage: 'radial-gradient(circle, hsl(var(--secondary) / 0.3) 1px, transparent 1px)',
-          backgroundSize: '20px 20px',
-        }}
-      ></div>
+    <main 
+      className="flex min-h-screen flex-col items-center justify-center p-4 sm:p-8 md:p-12 overflow-hidden relative font-headline"
+      style={{
+        background: 'radial-gradient(ellipse at center, hsl(var(--secondary) / 0.2) 0%, hsl(var(--background)) 70%)',
+      }}
+    >
       <Alerts alerts={alerts} />
       <StatusGauges data={vehicleData} />
 
