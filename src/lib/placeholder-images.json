@@ -1,10 +1,22 @@
 {
   "placeholderImages": [
     {
-      "id": "map-background",
+      "id": "f1-background",
       "description": "An F1 car racing down a track.",
       "imageUrl": "https://picsum.photos/seed/f1-racing-lane/1920/1080",
       "imageHint": "f1 racing"
+    },
+    {
+      "id": "map-widget-small",
+      "description": "A small map view for the widget.",
+      "imageUrl": "https://picsum.photos/seed/map-widget-small/200/150",
+      "imageHint": "map satellite"
+    },
+    {
+      "id": "map-widget-large",
+      "description": "An enlarged map view.",
+      "imageUrl": "https://picsum.photos/seed/map-widget-large/1280/720",
+      "imageHint": "map satellite"
     }
   ]
 }

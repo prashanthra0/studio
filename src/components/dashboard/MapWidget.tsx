@@ -1,0 +1,60 @@
+'use client';
+
+import { useState } from 'react';
+import Image from 'next/image';
+import { Maximize, Minimize } from 'lucide-react';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog';
+import { Button } from '@/components/ui/button';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+
+export function MapWidget() {
+  const [isOpen, setIsOpen] = useState(false);
+  const smallMapImage = PlaceHolderImages.find(img => img.id === 'map-widget-small');
+  const largeMapImage = PlaceHolderImages.find(img => img.id === 'map-widget-large');
+
+  return (
+    <Dialog open={isOpen} onOpenChange={setIsOpen}>
+      <DialogTrigger asChild>
+        <div className="fixed bottom-4 right-4 z-30 cursor-pointer">
+          {smallMapImage && (
+            <Image
+              src={smallMapImage.imageUrl}
+              alt={smallMapImage.description}
+              width={200}
+              height={150}
+              className="rounded-lg border-2 border-primary shadow-lg hover:scale-105 transition-transform"
+              data-ai-hint={smallMapImage.imageHint}
+            />
+          )}
+          <div className="absolute top-1 right-1">
+             <Button variant="ghost" size="icon" className="h-6 w-6 text-primary hover:bg-primary/20">
+                <Maximize className="h-4 w-4" />
+             </Button>
+          </div>
+        </div>
+      </DialogTrigger>
+      <DialogContent className="max-w-4xl h-[80vh] p-0">
+        <DialogHeader className="p-4">
+          <DialogTitle>Live Map</DialogTitle>
+        </DialogHeader>
+        <div className="relative w-full h-full">
+          {largeMapImage && (
+            <Image
+              src={largeMapImage.imageUrl}
+              alt={largeMapImage.description}
+              fill
+              className="object-cover"
+              data-ai-hint={largeMapImage.imageHint}
+            />
+          )}
+        </div>
+      </DialogContent>
+    </Dialog>
+  );
+}

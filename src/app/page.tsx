@@ -7,10 +7,11 @@ import { Alerts } from '@/components/dashboard/Alerts';
 import { useVehicleData } from '@/hooks/useVehicleData';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { MapWidget } from '@/components/dashboard/MapWidget';
 
 export default function Home() {
   const { vehicleData, alerts } = useVehicleData();
-  const mapImage = PlaceHolderImages.find(img => img.id === 'map-background');
+  const mapImage = PlaceHolderImages.find(img => img.id === 'f1-background');
 
   return (
     <main 
@@ -21,7 +22,7 @@ export default function Home() {
           src={mapImage.imageUrl}
           alt={mapImage.description}
           fill
-          className="object-cover opacity-20"
+          className="object-cover opacity-30"
           data-ai-hint={mapImage.imageHint}
         />
       )}
@@ -55,6 +56,7 @@ export default function Home() {
             </div>
         </div>
       </div>
+      <MapWidget />
     </main>
   );
 }
