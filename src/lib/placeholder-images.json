@@ -9,13 +9,13 @@
     {
       "id": "map-widget-small",
       "description": "A small map view for the widget with navigation started.",
-      "imageUrl": "https://placehold.co/200x150/212932/DBF72C?text=Map",
+      "imageUrl": "https://images.unsplash.com/photo-1613904631352-2b688538a1a3?q=80&w=200",
       "imageHint": "map navigation"
     },
     {
       "id": "map-widget-large",
       "description": "An enlarged map view with navigation started.",
-      "imageUrl": "https://placehold.co/1280x720/212932/DBF72C?text=Map",
+      "imageUrl": "https://images.unsplash.com/photo-1613904631352-2b688538a1a3?q=80&w=1280",
       "imageHint": "map navigation"
     }
   ]

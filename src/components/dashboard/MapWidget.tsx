@@ -21,14 +21,14 @@ export function MapWidget() {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <div className="fixed bottom-4 right-4 z-30 cursor-pointer">
+        <div className="fixed bottom-4 right-4 z-30 cursor-pointer group">
           {smallMapImage && (
             <Image
               src={smallMapImage.imageUrl}
               alt={smallMapImage.description}
               width={200}
               height={150}
-              className="rounded-lg border-2 border-primary shadow-lg hover:scale-105 transition-transform"
+              className="rounded-lg border-2 border-primary shadow-lg group-hover:scale-105 transition-transform object-cover"
               data-ai-hint={smallMapImage.imageHint}
             />
           )}
