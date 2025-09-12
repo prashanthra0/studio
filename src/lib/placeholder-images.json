@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "map-background",
-      "description": "An F1 car on a futuristic race track.",
-      "imageUrl": "https://picsum.photos/seed/f1-race/1920/1080",
-      "imageHint": "f1 car"
+      "description": "An F1 car racing down a track.",
+      "imageUrl": "https://picsum.photos/seed/f1-racing-lane/1920/1080",
+      "imageHint": "f1 racing"
     }
   ]
 }
