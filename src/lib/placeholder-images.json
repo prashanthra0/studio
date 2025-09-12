@@ -3,19 +3,19 @@
     {
       "id": "f1-background",
       "description": "An F1 car racing down a track.",
-      "imageUrl": "https://picsum.photos/seed/f1-racing-lane/1920/1080",
+      "imageUrl": "https://images.unsplash.com/photo-1552672982-14315265c697?q=80&w=1920",
       "imageHint": "f1 racing"
     },
     {
       "id": "map-widget-small",
       "description": "A small map view for the widget with navigation started.",
-      "imageUrl": "https://picsum.photos/seed/map-navigation-small/200/150",
+      "imageUrl": "https://placehold.co/200x150/212932/DBF72C?text=Map",
       "imageHint": "map navigation"
     },
     {
       "id": "map-widget-large",
       "description": "An enlarged map view with navigation started.",
-      "imageUrl": "https://picsum.photos/seed/map-navigation-large/1280/720",
+      "imageUrl": "https://placehold.co/1280x720/212932/DBF72C?text=Map",
       "imageHint": "map navigation"
     }
   ]
