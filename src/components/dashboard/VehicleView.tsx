@@ -1,3 +1,4 @@
+'use client';
 import { F1CarIcon } from '@/components/icons/F1CarIcon';
 
 export function VehicleView() {
