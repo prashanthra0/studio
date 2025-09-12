@@ -15,11 +15,11 @@ export default function Home() {
       className="flex min-h-screen flex-col items-center justify-center overflow-hidden relative font-headline"
     >
       <Image
-          src="https://images.unsplash.com/photo-1580273916550-42f4b4e54854?q=80&w=1920"
-          alt="A futuristic car cockpit with a blurred city background."
+          src="https://images.unsplash.com/photo-1629566270659-5f09c74b9f68?q=80&w=1920"
+          alt="An F1 car racing on a track at night, with city lights in the background."
           fill
           className="object-cover opacity-20"
-          data-ai-hint="futuristic car"
+          data-ai-hint="dubai f1 track"
         />
       <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background"></div>
 
