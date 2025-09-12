@@ -3,60 +3,33 @@ import React from 'react';
 export function F1CarIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
-      viewBox="0 0 100 220"
+      viewBox="0 0 200 400"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-        <path d="M 50, 10 
-                 L 40, 20 
-                 L 60, 20 
-                 L 50, 10 Z" strokeWidth="2" />
-        <path d="M 45, 20 
-                 L 55, 20 
-                 L 55, 40 
-                 L 45, 40 
-                 L 45, 20 Z" strokeWidth="2" />
+      {/* Main Body */}
+      <path d="M100 50 L120 150 L80 150 Z" fill="currentColor" stroke="hsl(var(--primary))" strokeWidth="2" />
+      <path d="M90 150 H110 V280 H90 Z" fill="currentColor" stroke="hsl(var(--primary))" strokeWidth="2" />
+      
+      {/* Front Wing */}
+      <path d="M70 60 H130 L120 80 H80 Z" fill="currentColor" stroke="hsl(var(--primary))" strokeWidth="3" />
 
-        <path d="M 30, 40 
-                 L 70, 40 
-                 L 80, 60 
-                 L 20, 60 
-                 L 30, 40 Z" strokeWidth="3" />
-        
-        <path d="M 20, 60 
-                 L 80, 60 
-                 L 85, 120 
-                 L 15, 120 
-                 L 20, 60 Z" strokeWidth="3" />
+      {/* Rear Wing */}
+      <path d="M70 290 H130 L125 310 H75 Z" fill="currentColor" stroke="hsl(var(--primary))" strokeWidth="3" />
 
-        <path d="M 50, 65 
-                 C 52, 70 52, 75 50, 80 
-                 L 40, 80 
-                 L 40, 65 
-                 L 50, 65 Z" strokeWidth="2" />
+      {/* Sidepods */}
+      <path d="M80 160 L70 200 L70 250 L80 260 Z" fill="currentColor" stroke="hsl(var(--primary))" strokeWidth="2" />
+      <path d="M120 160 L130 200 L130 250 L120 260 Z" fill="currentColor" stroke="hsl(var(--primary))" strokeWidth="2" />
 
-        <path d="M 15, 120 
-                 L 85, 120 
-                 L 80, 180 
-                 L 20, 180 
-                 L 15, 120 Z" strokeWidth="3" />
+      {/* Wheels */}
+      <rect x="50" y="100" width="20" height="40" rx="5" fill="currentColor" stroke="hsl(var(--primary))" strokeWidth="2" />
+      <rect x="130" y="100" width="20" height="40" rx="5" fill="currentColor" stroke="hsl(var(--primary))" strokeWidth="2" />
+      <rect x="50" y="270" width="20" height="40" rx="5" fill="currentColor" stroke="hsl(var(--primary))" strokeWidth="2" />
+      <rect x="130" y="270" width="20" height="40" rx="5" fill="currentColor" stroke="hsl(var(--primary))" strokeWidth="2" />
 
-        <path d="M 5, 125 
-                 L 15, 125 
-                 L 15, 175 
-                 L 5, 175 
-                 L 5, 125 Z" strokeWidth="2" />
-        <path d="M 95, 125 
-                 L 85, 125 
-                 L 85, 175 
-                 L 95, 175 
-                 L 95, 125 Z" strokeWidth="2" />
-        
-        <path d="M 20, 180 
-                 L 80, 180 
-                 L 70, 210 
-                 L 30, 210 
-                 L 20, 180 Z" strokeWidth="3" />
+      {/* Cockpit */}
+      <circle cx="100" cy="180" r="15" fill="hsl(var(--background))" stroke="hsl(var(--primary))" strokeWidth="2" />
+      <circle cx="100" cy="180" r="5" fill="hsl(var(--primary))" />
     </svg>
   );
 }
