@@ -6,6 +6,7 @@ import { VehicleView } from '@/components/dashboard/VehicleView';
 import { Alerts } from '@/components/dashboard/Alerts';
 import { useVehicleData } from '@/hooks/useVehicleData';
 import Image from 'next/image';
+import { MapWidget } from '@/components/dashboard/MapWidget';
 
 export default function Home() {
   const { vehicleData, alerts } = useVehicleData();
@@ -25,6 +26,7 @@ export default function Home() {
 
       <Alerts alerts={alerts} />
       <StatusGauges data={vehicleData} />
+      <MapWidget />
 
       <div className="relative z-10 grid grid-cols-[1fr_auto_1fr] grid-rows-[1fr_auto] items-center w-full max-w-7xl gap-y-4 p-4 sm:p-8 md:p-12" style={{height: 'min(80vh, 500px)'}}>
         

@@ -1,0 +1,15 @@
+
+[
+    {
+        "id": "map-widget-small",
+        "imageUrl": "https://images.unsplash.com/photo-1582576399994-4b55333876ce?q=80&w=600&h=450",
+        "description": "A small map widget showing a navigation route.",
+        "imageHint": "map navigation"
+    },
+    {
+        "id": "map-widget-large",
+        "imageUrl": "https://images.unsplash.com/photo-1582576399994-4b55333876ce?q=80&w=1920&h=1080",
+        "description": "An expanded view of a map widget showing a navigation route.",
+        "imageHint": "map navigation"
+    }
+]

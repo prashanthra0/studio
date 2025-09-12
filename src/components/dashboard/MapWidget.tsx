@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { Maximize, Minimize } from 'lucide-react';
+import { Maximize } from 'lucide-react';
 import {
   Dialog,
   DialogContent,
@@ -11,7 +11,7 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+import PlaceHolderImages from '@/lib/placeholder-images.json';
 
 export function MapWidget() {
   const [isOpen, setIsOpen] = useState(false);
