@@ -1,3 +1,10 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "map-background",
+      "description": "A dark, stylized map for the dashboard background.",
+      "imageUrl": "https://picsum.photos/seed/neondrivemap/1024/1024",
+      "imageHint": "dark map"
+    }
+  ]
 }
