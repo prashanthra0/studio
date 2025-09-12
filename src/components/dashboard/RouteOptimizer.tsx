@@ -72,7 +72,7 @@ export function RouteOptimizer() {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <Button variant="ghost" size="icon" className="text-primary hover:bg-primary/20 drop-shadow-[0_0_4px_hsl(var(--primary))]">
+        <Button variant="ghost" size="icon" className="text-primary hover:bg-primary/20">
           <Route className="h-5 w-5" />
         </Button>
       </DialogTrigger>

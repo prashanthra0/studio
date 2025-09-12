@@ -12,14 +12,14 @@ export function VehicleView() {
           src={mapImage.imageUrl}
           alt={mapImage.description}
           fill
-          className="object-cover opacity-20"
+          className="object-cover opacity-10"
           data-ai-hint={mapImage.imageHint}
         />
       )}
       <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background"></div>
-      <div className="relative z-10 animate-pulse-slow">
+      <div className="relative z-10">
         <CarIcon
-          className="w-24 h-48 sm:w-32 sm:h-64 fill-background stroke-primary drop-shadow-[0_0_10px_hsl(var(--primary))]"
+          className="w-24 h-48 sm:w-32 sm:h-64 fill-background stroke-primary"
         />
       </div>
     </div>

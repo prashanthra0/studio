@@ -12,9 +12,6 @@ export default function Home() {
   return (
     <main 
       className="flex min-h-screen flex-col items-center justify-center p-4 sm:p-8 md:p-12 overflow-hidden relative font-headline"
-      style={{
-        background: 'radial-gradient(ellipse at center, hsl(var(--secondary) / 0.2) 0%, hsl(var(--background)) 70%)',
-      }}
     >
       <Alerts alerts={alerts} />
       <StatusGauges data={vehicleData} />

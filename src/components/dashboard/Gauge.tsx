@@ -21,12 +21,6 @@ export function Gauge({ value, max, label, unit, className }: GaugeProps) {
   return (
     <div className={cn("relative flex flex-col items-center justify-center", className)}>
       <svg className="w-full h-full" viewBox="0 0 200 200">
-        <defs>
-          <linearGradient id="gaugeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style={{ stopColor: 'hsl(var(--primary))', stopOpacity: 0.5 }} />
-            <stop offset="100%" style={{ stopColor: 'hsl(var(--primary))', stopOpacity: 1 }} />
-          </linearGradient>
-        </defs>
         {/* Background track */}
         <circle
           cx="100"
@@ -45,14 +39,13 @@ export function Gauge({ value, max, label, unit, className }: GaugeProps) {
           cy="100"
           r={radius}
           fill="none"
-          stroke="url(#gaugeGradient)"
+          stroke="hsl(var(--primary))"
           strokeWidth="10"
           strokeLinecap="round"
           strokeDasharray={circumference}
           strokeDashoffset={offset}
           transform="rotate(135 100 100)"
           className="transition-all duration-1000 ease-in-out"
-          style={{ filter: "drop-shadow(0 0 5px hsl(var(--primary)))" }}
         />
       </svg>
       <div className="absolute flex flex-col items-center justify-center">
