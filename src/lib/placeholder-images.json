@@ -3,8 +3,8 @@
     {
       "id": "map-background",
       "description": "A futuristic fusion of electronics and a car.",
-      "imageUrl": "https://picsum.photos/seed/electroniccar/1920/1080",
-      "imageHint": "electronics car"
+      "imageUrl": "https://picsum.photos/seed/techdrive/1920/1080",
+      "imageHint": "circuit board car"
     }
   ]
 }
