@@ -5,14 +5,28 @@ import { StatusGauges } from '@/components/dashboard/StatusGauges';
 import { VehicleView } from '@/components/dashboard/VehicleView';
 import { Alerts } from '@/components/dashboard/Alerts';
 import { useVehicleData } from '@/hooks/useVehicleData';
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Home() {
   const { vehicleData, alerts } = useVehicleData();
+  const mapImage = PlaceHolderImages.find(img => img.id === 'map-background');
 
   return (
     <main 
       className="flex min-h-screen flex-col items-center justify-center p-4 sm:p-8 md:p-12 overflow-hidden relative font-headline"
     >
+      {mapImage && (
+        <Image
+          src={mapImage.imageUrl}
+          alt={mapImage.description}
+          fill
+          className="object-cover opacity-10"
+          data-ai-hint={mapImage.imageHint}
+        />
+      )}
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background"></div>
+
       <Alerts alerts={alerts} />
       <StatusGauges data={vehicleData} />
 
@@ -24,7 +38,7 @@ export default function Home() {
         </div>
 
         {/* Central Vehicle View */}
-        <div className="row-start-1 w-full h-full">
+        <div className="col-start-2 row-start-1 w-full h-full">
           <VehicleView />
         </div>
 
