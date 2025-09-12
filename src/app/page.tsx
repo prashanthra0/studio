@@ -15,8 +15,8 @@ export default function Home() {
       className="flex min-h-screen flex-col items-center justify-center overflow-hidden relative font-headline"
     >
       <Image
-          src="https://images.unsplash.com/photo-1629566270659-5f09c74b9f68?q=80&w=1920"
-          alt="An F1 car racing on a track at night, with city lights in the background."
+          src="https://images.unsplash.com/photo-1503736334956-4c898e391471?q=80&w=1920"
+          alt="An F1 car racing on a track at night in Dubai."
           fill
           className="object-cover opacity-20"
           data-ai-hint="dubai f1 track"
