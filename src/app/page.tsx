@@ -14,14 +14,14 @@ export default function Home() {
 
   return (
     <main 
-      className="flex min-h-screen flex-col items-center justify-center p-4 sm:p-8 md:p-12 overflow-hidden relative font-headline"
+      className="flex min-h-screen flex-col items-center justify-center overflow-hidden relative font-headline"
     >
       {mapImage && (
         <Image
           src={mapImage.imageUrl}
           alt={mapImage.description}
           fill
-          className="object-cover opacity-10"
+          className="object-cover opacity-20"
           data-ai-hint={mapImage.imageHint}
         />
       )}
@@ -30,7 +30,7 @@ export default function Home() {
       <Alerts alerts={alerts} />
       <StatusGauges data={vehicleData} />
 
-      <div className="relative z-10 grid grid-cols-[1fr_auto_1fr] grid-rows-[1fr_auto] items-center w-full max-w-7xl gap-y-4" style={{height: 'min(80vh, 500px)'}}>
+      <div className="relative z-10 grid grid-cols-[1fr_auto_1fr] grid-rows-[1fr_auto] items-center w-full max-w-7xl gap-y-4 p-4 sm:p-8 md:p-12" style={{height: 'min(80vh, 500px)'}}>
         
         {/* Tachometer (RPM) */}
         <div className="row-start-1 justify-self-center">

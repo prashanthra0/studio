@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "map-background",
-      "description": "A dark, stylized map for the dashboard background.",
-      "imageUrl": "https://picsum.photos/seed/neondrivemap/1024/1024",
-      "imageHint": "dark map"
+      "description": "A futuristic fusion of electronics and a car.",
+      "imageUrl": "https://picsum.photos/seed/electroniccar/1920/1080",
+      "imageHint": "electronics car"
     }
   ]
 }
