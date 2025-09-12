@@ -6,26 +6,21 @@ import { VehicleView } from '@/components/dashboard/VehicleView';
 import { Alerts } from '@/components/dashboard/Alerts';
 import { useVehicleData } from '@/hooks/useVehicleData';
 import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { MapWidget } from '@/components/dashboard/MapWidget';
 
 export default function Home() {
   const { vehicleData, alerts } = useVehicleData();
-  const mapImage = PlaceHolderImages.find(img => img.id === 'f1-background');
 
   return (
     <main 
       className="flex min-h-screen flex-col items-center justify-center overflow-hidden relative font-headline"
     >
-      {mapImage && (
-        <Image
-          src={mapImage.imageUrl}
-          alt={mapImage.description}
+      <Image
+          src="https://images.unsplash.com/photo-1552672982-14315265c697?q=80&w=1920"
+          alt="An F1 car racing down a track."
           fill
           className="object-cover opacity-30"
-          data-ai-hint={mapImage.imageHint}
+          data-ai-hint="f1 racing"
         />
-      )}
       <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background"></div>
 
       <Alerts alerts={alerts} />
@@ -56,7 +51,6 @@ export default function Home() {
             </div>
         </div>
       </div>
-      <MapWidget />
     </main>
   );
 }
