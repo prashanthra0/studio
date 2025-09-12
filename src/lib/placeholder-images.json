@@ -8,15 +8,15 @@
     },
     {
       "id": "map-widget-small",
-      "description": "A small map view for the widget.",
-      "imageUrl": "https://picsum.photos/seed/map-widget-small/200/150",
-      "imageHint": "map satellite"
+      "description": "A small map view for the widget with navigation started.",
+      "imageUrl": "https://picsum.photos/seed/map-navigation-small/200/150",
+      "imageHint": "map navigation"
     },
     {
       "id": "map-widget-large",
-      "description": "An enlarged map view.",
-      "imageUrl": "https://picsum.photos/seed/map-widget-large/1280/720",
-      "imageHint": "map satellite"
+      "description": "An enlarged map view with navigation started.",
+      "imageUrl": "https://picsum.photos/seed/map-navigation-large/1280/720",
+      "imageHint": "map navigation"
     }
   ]
 }
