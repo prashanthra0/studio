@@ -16,7 +16,7 @@ export default function Home() {
       className="flex min-h-screen flex-col items-center justify-center overflow-hidden relative font-headline"
     >
       <Image
-          src="https://static.vecteezy.com/system/resources/previews/000/681/150/original/sport-car-wire-model-with-blue-neon-on-dark-background.jpg"
+          src="/sport-car-wire-model-with-blue-neon-on-dark-background.jpg"
           alt="Wireframe of a sports car with a blue neon glow."
           fill
           className="object-cover opacity-20"
