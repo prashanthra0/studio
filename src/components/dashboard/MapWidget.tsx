@@ -49,7 +49,7 @@ export function MapWidget() {
               src={largeMapImage.imageUrl}
               alt={largeMapImage.description}
               fill
-              className="object-cover object-bottom"
+              className="object-cover"
               data-ai-hint={largeMapImage.imageHint}
             />
           )}
