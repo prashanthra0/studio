@@ -16,11 +16,11 @@ export default function Home() {
       className="flex min-h-screen flex-col items-center justify-center overflow-hidden relative font-headline"
     >
       <Image
-          src="https://images.unsplash.com/photo-1503736334956-4c898e391471?q=80&w=1920"
-          alt="An F1 car racing on a track at night in Dubai."
+          src="https://static.vecteezy.com/system/resources/previews/000/681/150/original/sport-car-wire-model-with-blue-neon-on-dark-background.jpg"
+          alt="Wireframe of a sports car with a blue neon glow."
           fill
           className="object-cover opacity-20"
-          data-ai-hint="dubai f1 track"
+          data-ai-hint="wireframe car"
         />
       <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background"></div>
 
