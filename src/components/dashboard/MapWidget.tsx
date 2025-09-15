@@ -39,8 +39,8 @@ export function MapWidget() {
           </div>
         </div>
       </DialogTrigger>
-      <DialogContent className="max-w-4xl h-[80vh] p-0">
-        <DialogHeader className="p-4">
+      <DialogContent className="w-screen h-screen max-w-none p-0">
+        <DialogHeader className="p-4 absolute top-0 left-0 z-10 bg-background/50 backdrop-blur-sm rounded-br-lg">
           <DialogTitle>Live Map</DialogTitle>
         </DialogHeader>
         <div className="relative w-full h-full">
