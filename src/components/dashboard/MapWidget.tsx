@@ -26,8 +26,8 @@ export function MapWidget() {
             <Image
               src={smallMapImage.imageUrl}
               alt={smallMapImage.description}
-              width={200}
-              height={150}
+              width={100}
+              height={75}
               className="rounded-lg border-2 border-primary shadow-lg group-hover:scale-105 transition-transform object-cover"
               data-ai-hint={smallMapImage.imageHint}
             />
